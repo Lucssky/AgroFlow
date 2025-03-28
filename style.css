@@ -1,0 +1,129 @@
+body {
+  background: url('img/Lavoura3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@keyframes animate {
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+@keyframes animate-rotate {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  animation: animate 2s;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  color: black;
+  width: 100%;
+}
+
+header img {
+  width: 140px;
+  animation: animate-rotate 2s;
+}
+
+.header-content {
+  flex-grow: 0.7;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  color: black;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.download-btn {
+  display: inline-block;
+  background: #28a745;
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.2em;
+  transition: background 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background: #218838;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+footer {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Animação */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
