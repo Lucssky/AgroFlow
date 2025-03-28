@@ -7,21 +7,7 @@ body {
   text-align: center;
   color: white;
 }
-@keyframes animate {
-  from{
-    opacity: 0;
-    transform: translateY(30px);
-  }
-}
-@keyframes animate-rotate {
-  from{
-    transform: rotateX(0deg);
-  }
-  to{
-    transform: rotateY(360deg);
-  }
 
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,42 +17,46 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px;
   color: black;
   width: 100%;
 }
 
 header img {
-  width: 140px;
+  width: 100px;
   animation: animate-rotate 2s;
+  margin-bottom: 10px;
 }
 
 .header-content {
-  flex-grow: 0.7;
   text-align: center;
+  width: 100%;
 }
 
 header h1 {
-  margin: 0;
+  font-size: 2em; 
+  margin: 10px 0;
 }
 
 header p {
+  font-size: 1em; 
   margin-top: 5px;
 }
 
 h1 {
-  font-size: 2.5em;
-  margin: 0;
+  font-size: 2em; 
+  margin: 10px 0;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em; 
 }
 
 section {
-  padding: 50px;
-  margin: 20px;
+  padding: 30px;
+  margin: 10px;
   border-radius: 10px;
   color: black;
   background: rgba(0, 0, 0, 0.2);
@@ -80,7 +70,7 @@ section {
   text-decoration: none;
   border-radius: 5px;
   margin: 10px;
-  font-size: 1.2em;
+  font-size: 1em; 
   transition: background 0.3s ease-in-out;
 }
 
@@ -88,8 +78,9 @@ section {
   background: #218838;
 }
 
-form input, form textarea {
-  width: 80%;
+form input,
+form textarea {
+  width: 90%; 
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -102,7 +93,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 1em; 
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
@@ -116,7 +107,6 @@ footer {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Animação */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -127,3 +117,61 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes animate-rotate {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 140px; 
+    margin-bottom: 0;
+  }
+
+  .header-content {
+    flex-grow: 0.7;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.5em; 
+  }
+
+  header p {
+    font-size: 1.2em; 
+  }
+
+  h1 {
+    font-size: 2.5em; 
+  }
+
+  p {
+    font-size: 1.2em; 
+  }
+
+  .download-btn {
+    font-size: 1.2em; 
+  }
+
+  button {
+    font-size: 1.2em; 
+  }
+}
+
