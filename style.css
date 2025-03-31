@@ -17,42 +17,33 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px;
+  margin: 10px;
   color: black;
-  width: 100%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 header img {
   width: 100px;
   animation: animate-rotate 2s;
-  margin-bottom: 10px;
 }
 
 .header-content {
-  flex-grow: 0.7;
-  text-align: center;
-  width: 100%;
+  text-align: left;
+  margin-left: 20px;
 }
 
 header h1 {
-  font-size: 2em; 
-  margin: 10px 0;
+  font-size: 2em;
+  margin: 0;
 }
 
 header p {
-  font-size: 1em; 
+  font-size: 1em;
   margin-top: 5px;
-}
-
-h1 {
-  font-size: 2em; 
-  margin: 10px 0;
-}
-
-p {
-  font-size: 1em; 
 }
 
 section {
@@ -71,7 +62,7 @@ section {
   text-decoration: none;
   border-radius: 5px;
   margin: 10px;
-  font-size: 1em; 
+  font-size: 1em;
   transition: background 0.3s ease-in-out;
 }
 
@@ -81,7 +72,7 @@ section {
 
 form input,
 form textarea {
-  width: 90%; 
+  width: 90%;
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -94,7 +85,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1em; 
+  font-size: 1em;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
@@ -135,44 +126,41 @@ footer {
   }
 }
 
+
 @media (min-width: 768px) {
   header {
-    flex-direction: row; 
-    justify-content: space-between;
+    flex-direction: row;
   }
 
   header img {
-    width: 140px; 
-    margin-bottom: 0;
+    width: 140px;
   }
 
   .header-content {
-    flex-grow: 0.7;
     text-align: center;
   }
 
   header h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
   }
 
   header p {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 
   h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
   }
 
   p {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 
   .download-btn {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 
   button {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
 }
-
